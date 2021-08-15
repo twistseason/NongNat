@@ -11,7 +11,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: 100vh; 
+        min-height: 100vh; 
         margin: 0px;
     }
     .flip-card{
@@ -49,7 +49,7 @@
 
 .flip-card-back {
   /* background-color: #2980b9; */
-  color: white;
+  /* color: white; */
   transform: rotateY(180deg);
 }
 .AssetMedia--video{
@@ -59,7 +59,7 @@
 video::-webkit-media-controls {
   display:none !important;
 }
-.card{
+.r{
     box-shadow: 0px 0px 50px 10px rgba(255,215,0,0.25);
     -webkit-box-shadow: 0px 0px 50px 10px rgba(255,215,0,0.25);
     -moz-box-shadow: 0px 0px 50px 10px rgba(255,215,0,0.25);
@@ -80,14 +80,15 @@ video::-webkit-media-controls {
 
 <div  id="list_card"class="row m-0 d-none">
     <div class="container-fluid px-5">
-        <div class="row m-0">
+        <div class="row m-0 justify-content-center">
+            
             <div class="col-4 flip-card">
                 <div  id="1" class="flip-card-inner ">
                     <div class="flip-card-front d-flex justify-content-center align-items-center">
-                        <video autoplay="" id="c_1" onclick="gg('c_1')" class="AssetMedia--video card r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
+                        <video autoplay="" id="c_1" onclick="gg('c_1')" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
                     </div>
                     <div class="flip-card-back d-flex justify-content-center align-items-center">
-                        <video autoplay="" class="AssetMedia--video card r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
+                        <video autoplay="" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
                     </div>
                 </div>
             </div>
@@ -95,10 +96,10 @@ video::-webkit-media-controls {
             <div class="col-4 flip-card">
                 <div id="2" class="flip-card-inner ">
                     <div class="flip-card-front d-flex justify-content-center align-items-center">
-                        <video autoplay="" id="c_2" onclick="gg('c_2')" class="AssetMedia--video card r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
+                        <video autoplay="" id="c_2" onclick="gg('c_2')" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
                     </div>
                     <div class="flip-card-back d-flex justify-content-center align-items-center">
-                        <video autoplay="" class="AssetMedia--video card r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
+                        <video autoplay="" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
                     </div>
                 </div>
             </div>
@@ -106,15 +107,13 @@ video::-webkit-media-controls {
             <div class="col-4 flip-card">
                 <div id="3" class="flip-card-inner ">
                     <div class="flip-card-front d-flex justify-content-center align-items-center">
-                        <video autoplay="" id="c_3" onclick="gg('c_3')" class="AssetMedia--video card" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
+                        <video autoplay="" id="c_3" onclick="gg('c_3')" class="AssetMedia--video " controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
                     </div>
                     <div class="flip-card-back d-flex justify-content-center align-items-center">
-                        <video autoplay="" class="AssetMedia--video card" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
+                        <video autoplay="" class="AssetMedia--video " controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
                     </div>
                 </div>
             </div>
-            
-            
             
         </div>
     </div>
