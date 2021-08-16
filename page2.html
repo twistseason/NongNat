@@ -17,7 +17,7 @@
     .flip-card{
         background-color: transparent;max-height: 1000px;
         width: 100%;
-        min-height: 500px;
+        min-height: 380px;
         perspective: 1000px;  
     }
     .flip-card-inner {
@@ -82,6 +82,46 @@ background: #f0f0f080;
 border-radius: 0px;
 box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 }
+
+
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  0%   {transform: scale(0.3);}
+  100% {transform: scale(1);}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  0%   {transform: scale(0.3);}
+  100% {transform: scale(1);}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  0%   {transform: scale(0.3);}
+  100% {transform: scale(1);}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  0%   {transform: scale(0.3);}
+  100% {transform: scale(1);}
+}
+
+
+
+
 </style>
 
 
@@ -90,54 +130,71 @@ box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 </head>
 <body>
 
-<div id="pack" >
+<!-- <div id="pack" >
     <div  class="d-flex min-vh-100 ">
         <video  id="myVideo" class="w-75  m-auto" onclick="play(this)"   playsinline=""  src="/img/lootchest-xmas-showcase-4k-1.mp4" style="border-radius: initial;"></video>
     </div>     
-</div>
+</div> -->
 
-<div  id="list_card"class="row m-0 d-none">
-    <div class="container-fluid px-5">
-        <div class="row m-0 justify-content-center">
+<div  id="list_card"class="row m-0 ">
+    <div class="container-fluid p-5" >
+        <div class="row m-0  px-5">
+            <div class="col-12 px-5 d-flex flex-wrap justify-content-center">
+
+                <div class="col-3 flip-card fade-in-image zoom-in">
+                    <div  id="1" class="flip-card-inner ">
+                        <div class="flip-card-front d-flex justify-content-center align-items-center">
+                            <video autoplay="" id="c_1" onclick="gg('c_1')" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
+                        </div>
+                        <div class="flip-card-back d-flex justify-content-center align-items-center">
+                            <video autoplay="" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-3 flip-card fade-in-image zoom-in">
+                    <div id="2" class="flip-card-inner ">
+                        <div class="flip-card-front d-flex justify-content-center align-items-center">
+                            <video autoplay="" id="c_2" onclick="gg('c_2')" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
+                        </div>
+                        <div class="flip-card-back d-flex justify-content-center align-items-center">
+                            <video autoplay="" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-3 flip-card fade-in-image zoom-in">
+                    <div id="3" class="flip-card-inner ">
+                        <div class="flip-card-front d-flex justify-content-center align-items-center">
+                            <video autoplay="" id="c_3" onclick="gg('c_3')" class="AssetMedia--video " controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
+                        </div>
+                        <div class="flip-card-back d-flex justify-content-center align-items-center">
+                            <video autoplay="" class="AssetMedia--video " controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             
-            <div class="col-4 flip-card">
-                <div  id="1" class="flip-card-inner ">
-                    <div class="flip-card-front d-flex justify-content-center align-items-center">
-                        <video autoplay="" id="c_1" onclick="gg('c_1')" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
-                    </div>
-                    <div class="flip-card-back d-flex justify-content-center align-items-center">
-                        <video autoplay="" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-4 flip-card">
-                <div id="2" class="flip-card-inner ">
-                    <div class="flip-card-front d-flex justify-content-center align-items-center">
-                        <video autoplay="" id="c_2" onclick="gg('c_2')" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
-                    </div>
-                    <div class="flip-card-back d-flex justify-content-center align-items-center">
-                        <video autoplay="" class="AssetMedia--video  r" controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-4 flip-card">
-                <div id="3" class="flip-card-inner ">
-                    <div class="flip-card-front d-flex justify-content-center align-items-center">
-                        <video autoplay="" id="c_3" onclick="gg('c_3')" class="AssetMedia--video " controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/nTbgfI_y7n7QCVGdMsNAtgTutsvG4WAJAg5M6sbPAt_bBmUxHL_emFJzIWQSWq3pr4Bpv_cH9HCiFTR1rdERt-3POrQr0IguizVPkDk" src="https://storage.opensea.io/files/3d80b9e5064db372f055aa29e73515e3.mp4" style="border-radius: initial;"></video>
-                    </div>
-                    <div class="flip-card-back d-flex justify-content-center align-items-center">
-                        <video autoplay="" class="AssetMedia--video " controls="" controlslist="nodownload" loop="" playsinline="" poster="https://lh3.googleusercontent.com/QLDxGm0QXfv13Q6p6JBxYHCkkhgAqqnGLcx8vIcg2SMQBLAm_b9XLcrtUMeZVU1TRORFEScjQEpK1zV7iEVoWtH8nEYDklXv17fe_g" src="https://storage.opensea.io/files/6558c441f63c970880c980032e73eaa4.mp4" style="border-radius: initial;"></video>
-                    </div>
-                </div>
-            </div>
+            
             
         </div>
     </div>
+    <div class="row m-0 justify-content-center w-100">
+        <div class="col-5 pr-0">
+            <hr style="border: solid 1px white;">
+        </div>
+        <div class="col-2 d-flex justify-content-center ">
+           <h4 onclick="flipall('flip-card-inner')" class="  text-white font-weight-lighter" style="cursor: pointer; ">เปิดทั้งหมด</h4>
+        </div>
+        <div class="col-5 pl-0">
+            <hr style="border: solid 1px white;">
+        </div>
+        <!-- <img src="/img/c-pack.png" alt=""> -->
+    </div>
 
-    <div class="row justify-content-center w-100">
-        <div class="col-4 d-flex justify-content-around">
+    <div class="row m-0 justify-content-center w-100">
+        <div class="col-4 d-flex justify-content-around p-5">
             <a name="" id="" class="text-white text-decoration-none font-weight-light " href="/page1.html" role="button">
                 กลับไปหน้าแรก    
             </a>
@@ -152,24 +209,38 @@ box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 
 
 <script type='text/javascript'>
-  document.getElementById('myVideo').addEventListener('ended',myHandler,false);
-  function myHandler(e) {
+//   document.getElementById('myVideo').addEventListener('ended',myHandler,false);
+//   function myHandler(e) {
      
-    document.getElementById('pack').remove(); 
-    console.log("gg");
-    var show = document.getElementById('list_card');
-    show.classList.remove("d-none");   
-      // What you want to do after the event
-  }
+//     document.getElementById('pack').remove(); 
+//     console.log("gg");
+//     var show = document.getElementById('list_card');
+//     show.classList.remove("d-none");   
+//       // What you want to do after the event
+//   }
  
 
   function gg(e){
     var card = document.getElementById(e).parentElement.parentElement.id;
     var flip = document.getElementById(card);
      flip.style.transform = 'rotateY(180deg)';
+     console.log(flip);
   }
+
+  function flipall(){
+    var e = document.getElementsByClassName('flip-card-inner');
+    // console.log(e);
+    for (let i = 0; i < e.length; i++) {
+        const flip = e[i];
+        console.log(flip);
+
+        flip.style.transform = 'rotateY(180deg)';
+
+    }
+    
+}
+   
   
 </script>
 </body>
 </html> 
-
