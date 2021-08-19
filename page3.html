@@ -85,18 +85,29 @@ background: #f0f0f080;
 border-radius: 0px;
 box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 }
+
+
+#grad1 {
+  height: 100px;
+  width: 100px;
+  background:
+        linear-gradient(#DA830C,#eF3242, transparent),
+        linear-gradient(to top left, #560b34,#850A81, transparent),
+        linear-gradient(to top right, #c4533910,#0a498188, transparent);
+    background-blend-mode: screen;
+    border: white 5px solid;
+}
   </style>
 </head>
   <body>
       <div class="row m-0">
-          <div class="col-3 vh-100 position-fixed p-0 overflow-auto" style="background-color: #3D99A6;" >
-            <div class="col-12 text-center" style="height: 80px; background-color: #0E1F29;">
-                <img src="https://workforcesuccess.chrr.ohio-state.edu/sites/default/files/img/placeholders/placeholder.png" 
-                style="width: 100px; height: 100px; object-fit: cover; margin-top: 30px;" class="img-fluid rounded-circle " alt=""> 
+          <div class="col-3 vh-100 position-fixed p-0 " style="background-color: #3D99A6; overflow-y: auto;" >
+            <div class="col-12 d-flex justify-content-center" style="height: 80px; background-color: #0E1F29;">
+                <div id="grad1" style="height: 100px ; width: 100px; margin-top: 30px;" class="img-fluid rounded-circle"></div>
             </div>
             <div class="col-12 pt-5 mt-3 text-center">
                <h1 class="font-weight-light">Username</h1>
-               <h5 class="font-weight-light">0000x 00x 00000000x</h5>
+               <small class="font-weight-light">0xDA830CeF3242560b34850A81c45339100a498188</small>
             </div>
             <div class="col-12 mt-3  p-0">
                 <div class="col-12 bg-white  border-bottom px-0">
